@@ -10,7 +10,7 @@ function Values() {
       <div className='compareMenuGrid'>
         <div>
           <p className='symbolName'>
-            {Object.values(data['Name']) + " : " + Object.values(data['Close Price'])}
+            {Object.values(data['Name'])!=""?Object.values(data['Name']) + " : " + Object.values(data['Close Price']):""}
           </p>
           <p className='sectorName'>
             {Object.values(data['Sector'])}
