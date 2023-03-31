@@ -251,3 +251,23 @@ body {
  .Comparebutton button:hover::before {
   width: 9em;
  }
+ .input-container input{
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+ }
+ .addBtn{
+  background-color: #393939;
+  width: 4vw;
+  padding: 4px;
+  margin: 8px 0 0 140px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  height: 2vw;
+ }
+ 

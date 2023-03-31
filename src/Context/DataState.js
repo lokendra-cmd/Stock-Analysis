@@ -4,6 +4,8 @@ import axios from "axios";
 import DataContext from './DataContext';
 
 function DataState(props) {
+  const [compareState, setcompareState] = useState(false)
+  const [compareSymbol, setcompareSymbol] = useState()
     const [data, setData] = useState({
         "5 Year CAGR": {
           "1": null
@@ -83,7 +85,7 @@ function DataState(props) {
 
 
     return (
-        <DataContext.Provider value={{data,getData}}>
+        <DataContext.Provider value={{data,getData,compareSymbol, setcompareSymbol,compareState, setcompareState}}>
             {props.children}
         </DataContext.Provider>
     )

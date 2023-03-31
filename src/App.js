@@ -25,7 +25,7 @@ function App() {
     <Values/>
     <Comparison/>
     </DataState>
-  
+    
    </>
   );
 }
