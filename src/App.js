@@ -6,6 +6,7 @@ import BarChart from './Components/BarChart';
 import DataState from "./Context/DataState";
 import Values from './Components/Values';
 import Comparison from './Components/Comparison';
+import Home from './Components/Home';
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
     <SearchBar/>
     <Values/>
     <Comparison/>
+    {/* <Home/> */}
     </DataState>
     
    </>

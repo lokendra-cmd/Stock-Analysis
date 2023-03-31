@@ -270,4 +270,42 @@ body {
   text-align: center;
   height: 2vw;
  }
+ .dashboardGrid{
+  display: grid;
+  justify-content: start;
+  width: 98vw;
+  align-content: start;
+  grid-template-columns: auto auto;
+ }
+ .header{
+  width: 84vw;
+  height: 12vh;
+  background-color: white;
+  
+ }
+ .sideMenu{
+  height: 115vh;
+  width: 15vw;
+  background-color: white;
  
+  grid-row: 1 / 4;
+ }
+ .indicesCards{
+  height: 20vh;
+  width: 84vw;
+  
+ }
+ .plots_and_values{
+  height: 80vh;
+  width: 84vw;
+ }
+ .cards{
+  background-color: white;
+  width: 60vw;
+  margin: 1vh 12vw 0 12vw;
+  border-radius: 10px;
+  height: 18vh;
+ }
+ .comparisonBar{
+  margin: 2vw 25vw 0 25vw;
+ }

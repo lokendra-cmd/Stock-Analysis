@@ -3,23 +3,23 @@ import DataContext from "../Context/DataContext";
 import xmark from "../Pictures/xmark.svg"
 function Values() {
   const context = useContext(DataContext);
-  const { data,compareSymbol, setcompareSymbol,compareState, setcompareState} = context;
+  const {getCompareData,data,compareSymbol, setcompareSymbol,compareState, setcompareState} = context;
   const handleClick =()=>{
     setcompareState(true)
+    getCompareData(compareSymbol)
   }
   return (
     <>
       <div className='compareMenuGrid'>
         <div>
           <p className='symbolName'>
-            {Object.values(data['Name']) !== "" ? Object.values(data['Name']) + " : " + Object.values(data['Close Price']) : ""}
+            {Object.values(data['Name']) !="" ? Object.values(data['Name']) + " : " + Object.values(data['Close Price']) : ""}
           </p>
           <p className='sectorName'>
             {Object.values(data['Sector'])}
           </p>
         </div>
         <div className="Comparebutton dropdown">
-        {!compareState?"":<img src={xmark} alt="" style={{width:"20px",marginRight:"8px",cursor:"pointer"}} />}
           <button class="img btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            Compare
           </button>
